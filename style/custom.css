@@ -4,7 +4,7 @@
 |----------------------------------------------------------------------------*/
 
 #jp-top-panel, #jp-MainMenu{
-	background: var(--md-blue-700);
+	/*background: var(--md-blue-700);*/
 	color:white;
 }
 
