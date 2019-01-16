@@ -10,13 +10,13 @@ import { IThemeManager } from '@jupyterlab/apputils';
  * A plugin for the Jupyter Light Theme. Modified for AixViPMaP.
  */
 const plugin: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/theme-aixvipmap-extension:plugin',
+  id: '@jupyterlab/theme-aixvipmap-edited-extension:plugin',
   requires: [IThemeManager],
   activate: function(app: JupyterLab, manager: IThemeManager) {
-    const style = '@jupyterlab/theme-aixvipmap-extension/index.css';
+    const style = '@jupyterlab/theme-aixvipmap-edited-extension/index.css';
 
     manager.register({
-      name: 'JupyterLab AixViPMaP',
+      name: 'JupyterLab AixViPMaP edited',
       isLight: true,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
