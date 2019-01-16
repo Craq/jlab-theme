@@ -4,10 +4,5 @@
 |----------------------------------------------------------------------------*/
 
 #jp-top-panel, #jp-MainMenu{
-	/*background: var(--md-blue-700);*/
-	color:white;
-}
-
-.p-MenuBar-item.p-mod-active{
-	color:black;
+	background: white;
 }
