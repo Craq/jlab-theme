@@ -7,7 +7,7 @@
     "url": "https://github.com/Craq"
   },
   "license": "Proprietary",
-  "author": "Lukas Koschmieder",
+  "author": "Craq",
   "files": [
     "lib/*.d.ts",
     "lib/*.js.map",

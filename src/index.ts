@@ -13,13 +13,16 @@ const plugin: JupyterLabPlugin<void> = {
   id: '@jupyterlab/theme-aixvipmap-edited-extension:plugin',
   requires: [IThemeManager],
   activate: function(app: JupyterLab, manager: IThemeManager) {
-    const style = '@jupyterlab/theme-aixvipmap-edited-extension/index.css';
 
     manager.register({
-      name: 'JupyterLab AixViPMaP edited',
-      isLight: true,
-      load: () => manager.loadCSS(style),
-      unload: () => Promise.resolve(undefined)
+      name: '@jupyterlab/theme-aixvipmap-edited-extension',
+      isLight: false,
+      load: function() {
+        return manager.loadCSS('@jupyterlab/theme-aixvipmap-edited-extension/index.css');
+      },
+      unload: function() {
+        return Promise.resolve(void 0);
+      }
     });
   },
   autoStart: true
