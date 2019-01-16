@@ -5,4 +5,10 @@
 
 #jp-top-panel, #jp-MainMenu{
 	background: white;
+	color: black;
+}
+.jp-Notebook.jp-mod-editMode .jp-Cell.jp-mod-active .jp-InputArea-editor {
+	border: var(--jp-border-width) solid var(--jp-cell-editor-border-color);
+	border-radius: 0px;
+   	background: var(--jp-cell-editor-background);
 }
